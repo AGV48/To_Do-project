@@ -7,8 +7,12 @@
 
 ## ¿Qué es y para qué es?
 
-Este proyecto tiene como objetivo implementar un software para crear y administrar tareas pendientes.
-Además de que funciona con una base de datos PostgreSQL para la administración de usuarios.
+Este proyecto tiene como objetivo implementar un software para crear y administrar tareas pendientes. Funciona con una base de datos PostgreSQL para la gestión de usuarios y permite a los usuarios realizar las siguientes acciones:
+
+- Crear, editar y eliminar tareas.
+- Crear y gestionar categorías de tareas.
+- Cambiar contraseñas de usuario.
+- Exportar las tareas creadas a un archivo PDF.
 
 ## ¿Cómo lo hago funcionar?
 
@@ -49,6 +53,12 @@ El archivo `Secret_Config-sample.py` contiene las variables de configuración pa
     pip install psycopg2
     ```
 
+5. Instalar el módulo `fpdf ` para poder exportar las tareas en un archivo pdf. Para instalarlo ejecuta el siguiente comando en la terminal del proyecto:
+    ```
+    pip install fpdf
+    ```
+
+
 ## Estructura sugerida
 
 La estructura del proyecto sigue las prácticas recomendadas para mantener un código organizado y modular. A continuación, se describe la estructura sugerida:
@@ -59,6 +69,6 @@ La estructura del proyecto sigue las prácticas recomendadas para mantener un c�
 
 * model: Contiene el código fuente para modelar los usuarios que se van a ingresar a la base de datos.
 
-* consolas: Contiene el código fuente de la interfaz por consola, con la cual va a poder interactuar el usuario.
+* interfaces: Contiene el código fuente de la interfaz, con la cual va a poder interactuar el usuario.
 
 
